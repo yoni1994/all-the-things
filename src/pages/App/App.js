@@ -72,7 +72,29 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
-    ] 
+    ],
+    yonisThings: [
+      {
+        name: "laptop",
+        image: "https://imgs.xkcd.com/comics/functional.png",  
+        attributes: ["efficient", "sleek", "not a taco", "overheating"],
+      },
+      {
+        name: "taco",
+        image: "https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        attributes: ["meat", "tasty", "taco", "man's best friend"], 
+      },
+      {
+        name: "PS4",
+        image: "https://susanmaryetta.files.wordpress.com/2011/06/blublocker-the-hangover.png?w=584",
+        attributes: ["fun", "time consuming", "good for playing taco themed games", "rage-inducing", "used by all the introverts"],
+      },
+      { 
+        name: "car", 
+        image: "https://i.imgur.com/gRxOxsA.jpg", 
+        attributes: ["blue", "gets you places", "always in the sun", "needs more legroom"], 
+      },
+    ],
   } 
   render() {
     return (
