@@ -120,6 +120,9 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
+        <Route exact path='/the-high-tech-things'>
+          <TechnologicalThings things={this.state.yonisThings} />
+        </Route>
       </>
       
     );
