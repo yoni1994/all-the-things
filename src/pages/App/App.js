@@ -91,6 +91,7 @@ class App extends Component {
             <Link to="/the-manliest-things">Ben's Things</Link><br/>
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
+            <Link to="/the-sports-things">Jon's Things</Link><br/>
           </>
         </Route>
         {/* All the <Route> components should live here */}
