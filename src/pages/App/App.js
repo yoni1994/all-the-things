@@ -4,6 +4,7 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import SportsThings from '../SportsThings/SportsThings'
 
 class App extends Component {
   state = { 
@@ -104,6 +105,10 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
+        <Route exact path='/the-sports-things'>
+          <SportsThings things={this.state.jonsThings} />
+        </Route>
+        
       </>
       
     );
