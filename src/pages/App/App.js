@@ -5,6 +5,7 @@ import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import TechnologicalThings from '../TechnologicalThings/TechnologicalThings'
+import SportsThings from '../SportsThings/SportsThings'
 
 class App extends Component {
   state = { 
@@ -96,6 +97,13 @@ class App extends Component {
         attributes: ["blue", "gets you places", "always in the sun", "needs more legroom"], 
       },
     ],
+    jonsThings: [
+      {
+        name: 'basketball',
+        image: 'https://images.unsplash.com/photo-1519861531473-9200262188bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
+        attributes: ['fun', 'competitive', 'sport']
+      }
+    ] 
   } 
   render() {
     return (
@@ -108,6 +116,7 @@ class App extends Component {
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
             <Link to="/the-high-tech-things">Yoni's Things</Link><br/>
+            <Link to="/the-sports-things">Jon's Things</Link><br/>
           </>
         </Route>
         {/* All the <Route> components should live here */}
@@ -123,6 +132,10 @@ class App extends Component {
         <Route exact path='/the-high-tech-things'>
           <TechnologicalThings things={this.state.yonisThings} />
         </Route>
+        <Route exact path='/the-sports-things'>
+          <SportsThings things={this.state.jonsThings} />
+        </Route>
+        
       </>
       
     );
